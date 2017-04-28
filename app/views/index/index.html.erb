@@ -1,0 +1,11 @@
+<head>
+
+</head>
+<body>
+    <h1>Buscar</h1>
+    <%= form_tag("/resultados", method: "get") do %>
+    <%= label_tag(:q, "Parametros de busqueda:") %>
+    <%= text_field_tag(:q) %>
+    <%= submit_tag("Buscar") %>
+    <% end %>
+</body>
