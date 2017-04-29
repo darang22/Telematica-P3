@@ -1,4 +1,12 @@
 <head></head>
 <body>
     <h1>Resultados:</h1>
+    <% @hash.each do |h| %>
+        <p>
+            <b>Palabra: </b> <%= h["word"] %>
+        </p>
+        <p>
+            <b>Archivos: </b> <%= h["files"] %>
+        </p>
+    <% end %>
 </body>
